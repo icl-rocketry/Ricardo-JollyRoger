@@ -33,6 +33,9 @@ void System::systemSetup()
     Serial.setRxBufferSize(GeneralConfig::SerialRxSize);
     Serial.begin(GeneralConfig::SerialBaud);
 
+    // Add short delay to boot
+    delay(1000);
+
     // Initialise state machine (idle)
     statemachine.initalize(std::make_unique<Idle>(systemstatus, commandhandler));
 
@@ -89,9 +92,11 @@ void System::initializeLoggers()
     // Create new log directory
     primarysd.mkdir(log_directory_path);
 
-    // Open system log file
+    // Open log files
     std::unique_ptr<WrappedFile> syslogfile = primarysd.open(log_directory_path + "/syslog.txt", static_cast<FILE_MODE>(O_WRITE | O_CREAT | O_AT_END));
+    std::unique_ptr<WrappedFile> packetlogfile = primarysd.open(log_directory_path + "/packets.bin", static_cast<FILE_MODE>(O_WRITE | O_CREAT | O_AT_END));
 
-    // Initialise system log file
+    // Initialise log files
     loggerhandler.retrieve_logger<RicCoreLoggingConfig::LOGGERS::SYS>().initialize(std::move(syslogfile), networkmanager);
+    loggerhandler.retrieve_logger<RicCoreLoggingConfig::LOGGERS::PACKET>().initialize(std::move(packetlogfile), networkmanager);
 }

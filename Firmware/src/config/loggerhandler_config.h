@@ -8,13 +8,17 @@
 #include <libriccore/logging/loggers/rnpmessagelogger.h>
 #include <libriccore/logging/loggers/syslogger.h>
 
+// Internal imports
+#include <loggers/packetlogger.h>
+
 namespace RicCoreLoggingConfig
 {
     enum class LOGGERS
     {
-        SYS, // default system logging
-        COUT // cout logging
+        SYS,   // default system logging
+        COUT,  // cout logging
+        PACKET // packet logging
     };
 
-    extern std::tuple<SysLogger, CoutLogger> logger_list;
+    extern std::tuple<SysLogger, CoutLogger, PacketLogger> logger_list;
 };

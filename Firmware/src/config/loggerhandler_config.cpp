@@ -5,4 +5,7 @@
 #include <libriccore/logging/loggers/rnpmessagelogger.h>
 #include <libriccore/logging/loggers/syslogger.h>
 
-std::tuple<SysLogger, CoutLogger> RicCoreLoggingConfig::logger_list = {SysLogger(), CoutLogger("COUT_LOG")};
+// Internal imports
+#include <loggers/packetlogger.h>
+
+std::tuple<SysLogger, CoutLogger, PacketLogger> RicCoreLoggingConfig::logger_list = {SysLogger(), CoutLogger("COUT_LOG"), PacketLogger()};
