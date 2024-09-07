@@ -22,4 +22,6 @@ private:
     bool initialised = false;
 
     const std::vector<uint8_t> start_buffer = {0x0, 0x0};
+
+    uint32_t log_index = 0;
 };

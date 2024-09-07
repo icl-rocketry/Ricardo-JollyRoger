@@ -34,7 +34,7 @@ void PacketLogger::log(RnpPacket &packet)
 PacketCaptureHandlerCb PacketLogger::getCaptureCallback()
 {
     // Return the packet capture callback
-    return [this](RnpPacket& packet)
+    return [this](RnpPacket &packet)
     {
         // Send packet to logger
         log(packet);
