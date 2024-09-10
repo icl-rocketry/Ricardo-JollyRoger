@@ -6,6 +6,7 @@
 
 // Internal imports
 #include <loggers/binarylogheader.h>
+#include <utilities/time.h>
 #include <utilities/vector.h>
 
 bool BinaryLogger::initialize(std::unique_ptr<WrappedFile> file)
@@ -34,7 +35,7 @@ void BinaryLogger::log(const std::vector<uint8_t> &payload)
     }
 
     // Generate binary log packet
-    BinaryLogHeader logHeader(log_index++, millis());
+    BinaryLogHeader logHeader(log_index++, millis(), getEpochMillis());
 
     // Generate packet
     std::vector<uint8_t> packet;
