@@ -3,13 +3,13 @@
 namespace PinMap
 {
     // SD card pins
-    static constexpr int SD_SCLK = 12;
-    static constexpr int SD_MISO = 11;
-    static constexpr int SD_MOSI = 10;
-    static constexpr int SD_CS = 6;
+    static constexpr int SD_SCLK = 33;
+    static constexpr int SD_MISO = 34;
+    static constexpr int SD_MOSI = 47;
+    static constexpr int SD_CS = 48;
 
     // CAN bus pins
-    static constexpr int CAN_TX = 17;
-    static constexpr int CAN_RX = 14;
+    static constexpr int CAN_TX = 42;
+    static constexpr int CAN_RX = 41;
 
 };
