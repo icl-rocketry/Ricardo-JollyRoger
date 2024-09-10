@@ -15,6 +15,7 @@
 #include "config/general_config.h"
 #include "commands/commands.h"
 #include "states/idle.h"
+#include "utilities/time.h"
 
 #ifdef CONFIG_IDF_TARGET_ESP32S3
 static constexpr int VSPI_BUS_NUM = 0;
@@ -47,6 +48,9 @@ void System::systemSetup()
     networkmanager.setNodeType(NODETYPE::HUB);
     networkmanager.setNoRouteAction(NOROUTE_ACTION::BROADCAST, {1, 3});
     networkmanager.addInterface(&canbus);
+
+    // Register simple time service
+    networkmanager.registerService(123, &simpleTimeUpdate);
 
     // Initialise SD
     setupSD();
