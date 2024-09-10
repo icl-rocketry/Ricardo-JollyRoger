@@ -43,6 +43,7 @@ void System::systemSetup()
     canbus.setup();
 
     // Configure network manager
+    networkmanager.setAddress(20);
     networkmanager.setNodeType(NODETYPE::HUB);
     networkmanager.setNoRouteAction(NOROUTE_ACTION::BROADCAST, {1, 3});
     networkmanager.addInterface(&canbus);
@@ -93,8 +94,9 @@ void System::initializeLoggers()
     primarysd.mkdir(log_directory_path);
 
     // Open log files
+    // NOTE: the packet log requires a larger buffer to reduce the number of dropped writes
     std::unique_ptr<WrappedFile> syslogfile = primarysd.open(log_directory_path + "/syslog.txt", static_cast<FILE_MODE>(O_WRITE | O_CREAT | O_AT_END));
-    std::unique_ptr<WrappedFile> packetlogfile = primarysd.open(log_directory_path + "/packets.bin", static_cast<FILE_MODE>(O_WRITE | O_CREAT | O_AT_END));
+    std::unique_ptr<WrappedFile> packetlogfile = primarysd.open(log_directory_path + "/packets.bin", static_cast<FILE_MODE>(O_WRITE | O_CREAT | O_AT_END), 30);
 
     // Initialise log files
     loggerhandler.retrieve_logger<RicCoreLoggingConfig::LOGGERS::SYS>().initialize(std::move(syslogfile), networkmanager);
