@@ -6,7 +6,7 @@
 
 // Internal imports
 #include <loggers/binarylogheader.h>
-#include <utilities/time.h>
+#include <time/ricardotimeservice.h>
 #include <utilities/vector.h>
 
 bool BinaryLogger::initialize(std::unique_ptr<WrappedFile> file)
@@ -35,7 +35,7 @@ void BinaryLogger::log(const std::vector<uint8_t> &payload)
     }
 
     // Generate binary log packet
-    BinaryLogHeader logHeader(log_index++, millis(), getEpochMillis());
+    BinaryLogHeader logHeader(log_index++, millis(), RicardoTimeService::getEpochMillis());
 
     // Generate packet
     std::vector<uint8_t> packet;

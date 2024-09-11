@@ -10,6 +10,7 @@
 #include "config/pinmap_config.h"
 #include "commands/commands.h"
 #include "storage/sdfat_store.h"
+#include "time/ricardotimeservice.h"
 
 /* System class: a class which encapsulates all the classes used to describe components on
     the board, creating the board system. Interacting with the board involves interacting
@@ -28,6 +29,8 @@ public:
     SPIClass SDSPI;
 
     SdFat_Store primarysd;
+
+    RicardoTimeService timeService;
 
 private:
     void setupSD();

@@ -15,7 +15,6 @@
 #include "config/general_config.h"
 #include "commands/commands.h"
 #include "states/idle.h"
-#include "utilities/time.h"
 
 #ifdef CONFIG_IDF_TARGET_ESP32S3
 static constexpr int VSPI_BUS_NUM = 0;
@@ -26,7 +25,7 @@ static constexpr int HSPI_BUS_NUM = HSPI;
 #endif
 
 System::System() : RicCoreSystem(Commands::command_map, Commands::defaultEnabledCommands, Serial),
-                   canbus(systemstatus, PinMap::CAN_TX, PinMap::CAN_RX, 3), SDSPI(VSPI_BUS_NUM), primarysd(SDSPI, PinMap::SD_CS, SD_SCK_MHZ(20), true, &systemstatus) {}
+                   canbus(systemstatus, PinMap::CAN_TX, PinMap::CAN_RX, 3), SDSPI(VSPI_BUS_NUM), primarysd(SDSPI, PinMap::SD_CS, SD_SCK_MHZ(20), true, &systemstatus), timeService(networkmanager) {}
 
 void System::systemSetup()
 {
@@ -48,9 +47,6 @@ void System::systemSetup()
     networkmanager.setNodeType(NODETYPE::HUB);
     networkmanager.setNoRouteAction(NOROUTE_ACTION::BROADCAST, {1, 3});
     networkmanager.addInterface(&canbus);
-
-    // Register simple time service
-    networkmanager.registerService(123, &simpleTimeUpdate);
 
     // Initialise SD
     setupSD();

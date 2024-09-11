@@ -1,32 +1,15 @@
-#pragma once
+#include "ricardotimeservice.h"
 
 // Standard imports
-#include <cstdint>
 #include <sys/time.h>
 
-// Third-party imports
-#include <librnp/rnp_networkmanager.h>
-#include <librnp/default_packets/simplecommandpacket.h>
-#include <libriccore/riccorelogging.h>
-
-inline int64_t timevalToMillis(const timeval &time)
+RicardoTimeService::RicardoTimeService(RnpNetworkManager &networkmanager, const uint8_t &service) : networkmanager(networkmanager)
 {
-    // Return time in milliseconds
-    return static_cast<int64_t>(time.tv_sec) * 1000LL + static_cast<int64_t>(time.tv_usec) / 1000LL;
-}
+    // Register service with network manager
+    networkmanager.registerService(service, &RicardoTimeService::simpleTimeUpdate);
+};
 
-inline timeval millisToTimeval(const int64_t &millis)
-{
-    // Create time structure
-    timeval time;
-    time.tv_sec = millis / 1000LL;
-    time.tv_usec = (millis * 1000LL) % 1000000LL;
-
-    // Return time structure
-    return time;
-}
-
-inline int64_t getEpochMillis()
+int64_t RicardoTimeService::getEpochMillis()
 {
     // Get time
     // NOTE: epoch times are susceptible to Y2K38 bug
@@ -37,7 +20,7 @@ inline int64_t getEpochMillis()
     return timevalToMillis(time);
 }
 
-inline void setEpochMillis(const int64_t &epochMillis)
+void RicardoTimeService::setEpochMillis(const int64_t &epochMillis)
 {
     // Get current system time
     const int64_t oldEpochMillis = getEpochMillis();
@@ -68,8 +51,24 @@ inline void setEpochMillis(const int64_t &epochMillis)
     adjtime(&delta, nullptr);
 }
 
-// TODO: replace with full time sync service
-inline void simpleTimeUpdate(packetptr_t packet)
+int64_t RicardoTimeService::timevalToMillis(const timeval &time)
+{
+    // Return time in milliseconds
+    return static_cast<int64_t>(time.tv_sec) * 1000LL + static_cast<int64_t>(time.tv_usec) / 1000LL;
+}
+
+timeval RicardoTimeService::millisToTimeval(const int64_t &millis)
+{
+    // Create time structure
+    timeval time;
+    time.tv_sec = millis / 1000LL;
+    time.tv_usec = (millis * 1000LL) % 1000000LL;
+
+    // Return time structure
+    return time;
+}
+
+void RicardoTimeService::simpleTimeUpdate(packetptr_t packet)
 {
     try
     {
