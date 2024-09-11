@@ -18,24 +18,57 @@
 class System : public RicCoreSystem<System, SYSTEM_FLAG, Commands::ID>
 {
 public:
+    /**
+     * @brief Construct a new System object
+     *
+     * @author Max Hallgarten La Casta
+     */
     System();
 
+    /**
+     * @brief Set up system
+     *
+     * @author Max Hallgarten La Casta
+     */
     void systemSetup();
 
+    /**
+     * @brief Update system
+     *
+     * @author Max Hallgarten La Casta
+     */
     void systemUpdate();
 
+    /// @brief Canbus
     CanBus<SYSTEM_FLAG> canbus;
 
+    /// @brief SPI interface for SD card
     SPIClass SDSPI;
 
+    /// @brief SD card file system
     SdFat_Store primarysd;
 
+    /// @brief System time service
     RicardoTimeService timeService;
 
 private:
+    /**
+     * @brief Set up SD card
+     *
+     * @author Max Hallgarten La Casta
+     */
     void setupSD();
+
+    /**
+     * @brief Initialise loggers
+     *
+     * @author Max Hallgarten La Casta
+     */
     void initializeLoggers();
 
+    /// @brief Log file directory
     const std::string log_path = "/Logs";
+
+    /// @brief Configuration directory
     const std::string config_path = "/Config";
 };

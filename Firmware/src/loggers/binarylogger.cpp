@@ -20,7 +20,7 @@ bool BinaryLogger::initialize(std::unique_ptr<WrappedFile> file)
 
     // Store file pointer
     _file = std::move(file);
-    initialised = true;
+    initialized = true;
 
     // Return success
     return true;
@@ -29,7 +29,7 @@ bool BinaryLogger::initialize(std::unique_ptr<WrappedFile> file)
 void BinaryLogger::log(const std::vector<uint8_t> &payload)
 {
     // Return if the logger is neither enabled nor initialised
-    if (!enabled || !initialised)
+    if (!enabled || !initialized)
     {
         return;
     }

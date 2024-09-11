@@ -15,6 +15,13 @@ private:
     const uint32_t millis;
     const int64_t epochMillis;
 
+    /**
+     * @brief Get the header serialiser
+     *
+     * @author Max Hallgarten La Casta
+     *
+     * @return constexpr auto Header serialiser
+     */
     static constexpr auto getSerialiser()
     {
         // Return serialiser
@@ -25,8 +32,24 @@ private:
     };
 
 public:
+    /**
+     * @brief Construct a new Binary Log Header object
+     *
+     * @author Max Hallgarten La Casta
+     *
+     * @param[in] index Packet index
+     * @param[in] millis System time since boot
+     * @param[in] epochMillis System time since epoch
+     */
     BinaryLogHeader(const uint32_t &index, const uint32_t &millis, const int64_t &epochMillis) : index(index), millis(millis), epochMillis(epochMillis) {}
 
+    /**
+     * @brief Return the serialised header
+     *
+     * @author Max Hallgarten La Casta
+     *
+     * @return std::vector<uint8_t> Serialised header
+     */
     std::vector<uint8_t> serialise()
     {
         // Return serialised packet
