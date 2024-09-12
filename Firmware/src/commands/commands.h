@@ -24,4 +24,16 @@ namespace Commands
 
     void FreeRamCommand(ForwardDecl_SystemClass &system, const RnpPacketSerialized &packet);
 
+    /**
+     * @brief Command for Blackbox telemetry
+     *
+     * Reponds to the source with a Blackbox Telemetry packet
+     *
+     * @author Max Hallgarten La Casta
+     *
+     * @param[in] system System
+     * @param[in] packet Received packet
+     */
+    void BlackBoxTelemetryCommand(ForwardDecl_SystemClass &system, const RnpPacketSerialized &packet);
+
 }

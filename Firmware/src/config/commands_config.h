@@ -19,12 +19,14 @@ namespace Commands
     enum class ID : uint8_t
     {
         NoCommand = 0,
-        Free_Ram = 250
+        Free_Ram = 250,
+        BlackBoxTelemetry = 123,
     };
 
-    inline std::initializer_list<ID> defaultEnabledCommands = {ID::Free_Ram};
+    inline std::initializer_list<ID> defaultEnabledCommands = {ID::Free_Ram, ID::BlackBoxTelemetry};
 
     inline std::unordered_map<ID, std::function<void(ForwardDecl_SystemClass &, const RnpPacketSerialized &)>> command_map{
-        {ID::Free_Ram, FreeRamCommand}};
+        {ID::Free_Ram, FreeRamCommand},
+        {ID::BlackBoxTelemetry, BlackBoxTelemetryCommand}};
 
 };
