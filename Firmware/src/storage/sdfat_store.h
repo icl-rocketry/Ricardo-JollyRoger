@@ -30,6 +30,35 @@ public:
 
     ~SdFat_Store() {};
 
+    /**
+     * @brief Get the total space of the store
+     *
+     * @author Max Hallgarten La Casta
+     *
+     * @return uint32_t Total space (in mebibytes)
+     */
+    uint32_t getTotalSpace();
+
+    /**
+     * @brief Get the free space of the store
+     *
+     * @todo Fix! System crashes when trying to retrieve the free cluster count. Potentially related (https://github.com/greiman/SdFat/issues/39)?
+     *
+     * @author Max Hallgarten La Casta
+     *
+     * @return uint32_t Free space (in mebibytes)
+     */
+    uint32_t getFreeSpace();
+
+    /**
+     * @brief Get the used space of the store
+     *
+     * @author Max Hallgarten La Casta
+     *
+     * @return uint32_t Used space (in mebibytes)
+     */
+    uint32_t getUsedSpace();
+
 protected:
     std::unique_ptr<WrappedFile> _open(std::string_view path, store_fd fileDesc, FILE_MODE mode, size_t maxQueueSize) override;
     bool _ls(std::string_view path, std::vector<directory_element_t> &directory_structure) override;
@@ -70,4 +99,7 @@ private:
     // };
 
     // void reportStatus(std::string_view message, bool raiseError);
+
+    /// @brief Number of sectors per mebibyte
+    static constexpr uint32_t sectorsPerMiB = 2048U;
 };

@@ -33,6 +33,54 @@ void SdFat_Store::setup()
     }
 }
 
+uint32_t SdFat_Store::getTotalSpace()
+{
+    // Return zero if the volume is not mounted
+    if (getState() != STATE::NOMINAL)
+    {
+        return 0U;
+    }
+
+    // Get number of sectors (each sector being 512 bytes)
+    const uint32_t totalSectorCount = filesys.vol()->clusterCount() * filesys.vol()->sectorsPerCluster();
+
+    // Return total space (in mebibytes)
+    return totalSectorCount / sectorsPerMiB;
+}
+
+uint32_t SdFat_Store::getFreeSpace()
+{
+    // Return zero if the volume is not mounted
+    if (getState() != STATE::NOMINAL)
+    {
+        return 0U;
+    }
+
+    // Return zero
+    return 0U;
+
+    // // Get number of free clusters
+    // const int32_t freeClusterCount = filesys.vol()->freeClusterCount();
+
+    // // Return zero if error occurs
+    // if (freeClusterCount < static_cast<int32_t>(0))
+    // {
+    //     return 0U;
+    // }
+
+    // // Get number of free sectors (each sector being 512 bytes)
+    // const uint32_t freeSectorCount = static_cast<uint32_t>(freeClusterCount) * filesys.vol()->sectorsPerCluster();
+
+    // // Return free space (in mebibytes)
+    // return freeSectorCount / sectorsPerMiB;
+}
+
+uint32_t SdFat_Store::getUsedSpace()
+{
+    // Return used space (in mebibytes)
+    return getTotalSpace() - getFreeSpace();
+}
+
 std::unique_ptr<WrappedFile> SdFat_Store::_open(std::string_view path, store_fd fileDesc, FILE_MODE mode, size_t maxQueueSize)
 {
     return std::make_unique<SdFat_WrappedFile>(filesys.open(std::string(path).c_str(), static_cast<oflag_t>(mode)), fileDesc, *this, mode, maxQueueSize);
