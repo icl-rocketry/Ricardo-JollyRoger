@@ -23,7 +23,18 @@ public:
     RicardoTimeService(RnpNetworkManager &networkmanager, const uint8_t &service = 123);
 
     /**
-     * @brief Get the current time
+     * @brief Get the current time (since boot)
+     *
+     * @author Max Hallgarten La Casta
+     *
+     * @return uint32_t Current time (milliseconds since boot)
+     */
+    static uint32_t getMillis();
+
+    /**
+     * @brief Get the current time (since epoch)
+     *
+     * @warning Underlying implementation subject to the Y2K38 bug (https://en.wikipedia.org/wiki/Year_2038_problem)
      *
      * @author Max Hallgarten La Casta
      *
@@ -32,7 +43,9 @@ public:
     static int64_t getEpochMillis();
 
     /**
-     * @brief Set the current time
+     * @brief Set the current time (since epoch)
+     *
+     * @warning Underlying implementation subject to the Y2K38 bug (https://en.wikipedia.org/wiki/Year_2038_problem)
      *
      * @author Max Hallgarten La Casta
      *

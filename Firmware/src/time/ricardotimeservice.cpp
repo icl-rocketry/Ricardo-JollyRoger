@@ -3,11 +3,20 @@
 // Standard imports
 #include <sys/time.h>
 
+// Third-party imports
+#include <libriccore/platform/millis.h>
+
 RicardoTimeService::RicardoTimeService(RnpNetworkManager &networkmanager, const uint8_t &service) : networkmanager(networkmanager)
 {
     // Register service with network manager
     networkmanager.registerService(service, &RicardoTimeService::simpleTimeUpdate);
 };
+
+uint32_t RicardoTimeService::getMillis()
+{
+    // Return time from boot in milliseconds
+    return millis();
+}
 
 int64_t RicardoTimeService::getEpochMillis()
 {
@@ -44,8 +53,8 @@ void RicardoTimeService::setEpochMillis(const int64_t &epochMillis)
     // Generate delta structure
     // TODO: consider negative deltas
     timeval delta;
-    delta.tv_sec = deltaMillis / 1000LL;
-    delta.tv_usec = (deltaMillis * 1000LL) % 1000LL;
+    delta.tv_sec = static_cast<time_t>(deltaMillis / 1000LL);
+    delta.tv_usec = static_cast<suseconds_t>((deltaMillis * 1000LL) % 1000000LL);
 
     // Adjust time
     adjtime(&delta, nullptr);
@@ -61,8 +70,8 @@ timeval RicardoTimeService::millisToTimeval(const int64_t &millis)
 {
     // Create time structure
     timeval time;
-    time.tv_sec = millis / 1000LL;
-    time.tv_usec = (millis * 1000LL) % 1000000LL;
+    time.tv_sec = static_cast<time_t>(millis / 1000LL);
+    time.tv_usec = static_cast<suseconds_t>((millis * 1000LL) % 1000000LL);
 
     // Return time structure
     return time;
