@@ -15,4 +15,4 @@
 	url = git@github.com:bblanchon/ArduinoJson.git
 [submodule "Firmware/lib/SdFat"]
 	path = Firmware/lib/SdFat
-	url = git@github.com:greiman/SdFat.git
+	url = git@github.com:icl-rocketry/SdFat.git
