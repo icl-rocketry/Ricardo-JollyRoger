@@ -1,1 +1,5 @@
+# KiCad lock files
 *.lck
+
+# Backups
+Ricardo-BlackBox/Ricardo-BlackBox-backups/*.zip
