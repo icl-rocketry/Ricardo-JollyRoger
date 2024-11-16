@@ -6002,7 +6002,7 @@
 		)
 		(uuid "d1d81cbc-3e94-4d84-bb26-f2191b7a5f93")
 	)
-	(label "NAND_SD3"
+	(label "NAND_SD0"
 		(at 147.32 95.25 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6079,7 +6079,7 @@
 		)
 		(uuid "3f00994b-99c9-4ca0-835d-a6fc3df540f3")
 	)
-	(label "NAND_SD1"
+	(label "NAND_CLK"
 		(at 147.32 105.41 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6189,7 +6189,7 @@
 		)
 		(uuid "6c1128bc-38d2-4f8f-92a4-d6ebf87a1eb9")
 	)
-	(label "NAND_CMD"
+	(label "NAND_SD2"
 		(at 147.32 100.33 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6387,7 +6387,7 @@
 		)
 		(uuid "b8c3908d-436a-4c69-b174-4d99ea380c4b")
 	)
-	(label "NAND_SD0"
+	(label "NAND_SD3"
 		(at 147.32 102.87 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6420,7 +6420,7 @@
 		)
 		(uuid "bf482801-739d-4fa2-877c-e72f08f9d7d6")
 	)
-	(label "NAND_CLK"
+	(label "NAND_SD1"
 		(at 147.32 97.79 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6497,7 +6497,7 @@
 		)
 		(uuid "de552ae9-cde6-4643-8cc7-9de2579dadae")
 	)
-	(label "NAND_SD2"
+	(label "NAND_CMD"
 		(at 147.32 118.11 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11713,7 +11713,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal"
+		(property "Footprint" "Connector_Molex:Molex_Pico-Clasp_202396-0807_1x08-1MP_P1.00mm_Horizontal"
 			(at 189.23 96.52 0)
 			(effects
 				(font
