@@ -42,7 +42,7 @@ private:
     std::unique_ptr<WrappedFile> _file;
 
     /// @brief Log packet marker
-    const std::vector<uint8_t> start_buffer = {0x0, 0x0};
+    const std::vector<uint8_t> END_BUFFER = {0x0};
 
     /// @brief Index of payloads logged
     uint32_t log_index = 0;

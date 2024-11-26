@@ -46,13 +46,13 @@ void BinaryLogger::log(const std::vector<uint8_t> &payload)
     std::vector<uint8_t> packet_COBS;
     COBS::encode(packet, packet_COBS);
 
-    // TODO: checksum (e.g. CRC?)
+    // TODO: checksum? (e.g. CRC?)
     // TODO: COBS encode packet and checksum together
 
     // Construct final buffer
     std::vector<uint8_t> buffer;
-    append(buffer, start_buffer); // Start bytes
-    append(buffer, packet_COBS);  // Payload
+    append(buffer, packet_COBS); // Payload
+    append(buffer, END_BUFFER);  // End marker
 
     try
     {
