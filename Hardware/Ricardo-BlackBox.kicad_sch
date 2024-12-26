@@ -4542,16 +4542,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 31.75) (xy 193.04 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "162b1493-0c11-4263-840f-dd81bc98bae2")
-	)
-	(wire
-		(pts
 			(xy 107.95 180.34) (xy 115.57 180.34)
 		)
 		(stroke
@@ -5282,6 +5272,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 31.75) (xy 193.04 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94cd7f3b-b693-4e6d-9177-0467b5a0afb5")
+	)
+	(wire
+		(pts
 			(xy 55.88 165.1) (xy 63.5 165.1)
 		)
 		(stroke
@@ -5289,6 +5289,16 @@
 			(type default)
 		)
 		(uuid "96315415-cfed-47d2-b3dd-d782358bd0df")
+	)
+	(wire
+		(pts
+			(xy 184.15 35.56) (xy 187.96 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "963e91b0-c0d9-430a-9e39-8fe01b0392cb")
 	)
 	(wire
 		(pts
@@ -5529,6 +5539,16 @@
 			(type default)
 		)
 		(uuid "cb423d23-248c-4025-8287-f52c79c458e6")
+	)
+	(wire
+		(pts
+			(xy 179.07 35.56) (xy 179.07 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbbba77b-15a9-456a-9942-b10e392b1e0a")
 	)
 	(wire
 		(pts
@@ -9249,6 +9269,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 181.61 35.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5fe8a790-b806-4451-b8c9-b6e904f776b1")
+		(property "Reference" "R20"
+			(at 181.61 40.5384 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 181.61 38.227 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 181.61 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 181.61 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b589d60d-7159-4a2b-b95a-427fca97bb61")
+		)
+		(pin "2"
+			(uuid "c4be4e91-1f6d-4992-92d6-7278f0260bd4")
+		)
+		(instances
+			(project "Ricardo-BlackBox"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 20.32 138.43 0)
 		(unit 1)
@@ -9312,6 +9399,72 @@
 			(project "RicardoTemplate"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 187.96 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "697daf9b-2ec1-4636-8208-2cc4e8c3aa60")
+		(property "Reference" "#PWR056"
+			(at 187.96 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.96 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 187.96 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5c5cd55f-3846-48e6-a41f-f3189cb9d5b3")
+		)
+		(instances
+			(project "Ricardo-BlackBox"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
