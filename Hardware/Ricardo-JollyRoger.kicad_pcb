@@ -517,7 +517,7 @@
 		)
 		(path "/9830946a-39d0-4899-bd7b-cdb4cbeb22c8")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -4 3.11)
@@ -815,7 +815,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/2f87fbfb-640d-48c7-babf-36917989d4b7")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -964,9 +964,9 @@
 		(at 111.525 55.59)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
-		(property "Reference" "TXD"
+		(property "Reference" "TXLED1"
 			(at 1 0 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "31adf218-d55e-4ead-a27c-e425460276be")
 			(effects
 				(font
@@ -1030,7 +1030,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005db110d6")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_circle
 			(center -1.09 0)
@@ -1468,7 +1468,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/e3bf37bc-a7d8-4293-a4b5-54cc127372d6")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -1682,7 +1682,7 @@
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/c6e654d3-0d45-4a74-8557-db0239fe22b2")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.93 -0.47)
@@ -2027,9 +2027,9 @@
 		(at 113.25 49.35 90)
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
-		(property "Reference" "BOOT"
+		(property "Reference" "BOOTJUMPER1"
 			(at 2.25 1.35 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "aef5af96-960a-46dc-9a17-50ebddcef6b8")
 			(effects
 				(font
@@ -2092,7 +2092,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/00000000-0000-0000-0000-00005dff8440")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.33 -1.33)
@@ -2566,9 +2566,9 @@
 		(at 102.925 71.68 90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
-		(property "Reference" "VBUS"
+		(property "Reference" "USBLED1"
 			(at 0 -0.9 90)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "faad9747-6e26-4246-a846-f60e4fefc279")
 			(effects
 				(font
@@ -2793,9 +2793,9 @@
 		(at 98.23 52.84 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
-		(property "Reference" "CANRX"
+		(property "Reference" "CRXLED1"
 			(at 1 -0.9 180)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "7d22c59e-ec43-46bf-9879-e71e9d622937")
 			(effects
 				(font
@@ -2859,7 +2859,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/5db9c379-e88f-4668-8d22-5836a891e11c")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_circle
 			(center -1.09 0)
@@ -3083,7 +3083,7 @@
 		)
 		(path "/c9b2ff89-c161-4200-9447-f984878121c0")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_poly
 			(pts
@@ -3902,9 +3902,9 @@
 		(at 98.23 55.09 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
-		(property "Reference" "CANTX"
+		(property "Reference" "CTXLED1"
 			(at 1 -0.9 180)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "76eea8ee-7f4e-493b-9d40-44efc26612d8")
 			(effects
 				(font
@@ -3968,7 +3968,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/05482fef-9cf6-47c2-b614-c3611049e333")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_circle
 			(center -1.09 0)
@@ -4195,7 +4195,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/fdf382fb-6a9e-48f3-836b-1d98b2ac82ea")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -4667,7 +4667,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00005dab5946")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 0.36)
@@ -4817,7 +4817,7 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R5"
-			(at -1 0.9 0)
+			(at 0 0.9 0)
 			(layer "F.SilkS")
 			(uuid "988561cb-7b01-40ab-a7f6-4b7923fa3570")
 			(effects
@@ -4826,7 +4826,6 @@
 					(thickness 0.1)
 					(bold yes)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "1k"
@@ -4882,7 +4881,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/a0121dbb-ecca-41b9-9180-84cb9b54d34b")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -5728,7 +5727,7 @@
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/9a1d0aac-d424-44a1-ad3f-6accfbc230c0")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
@@ -5846,7 +5845,7 @@
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/ae5bfcd3-4f51-447c-8e04-88a4b1c41583")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.93 -0.47)
@@ -5977,9 +5976,9 @@
 		(at 93.425 68.69)
 		(descr "SMD pad as test Point, diameter 1.5mm")
 		(tags "test point SMD pad")
-		(property "Reference" "BBOUT"
+		(property "Reference" "TP8"
 			(at 0 -1.2 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "b1d047cf-e35c-4571-acfc-40dccfa106f6")
 			(effects
 				(font
@@ -6159,7 +6158,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/5fe8a790-b806-4451-b8c9-b6e904f776b1")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -6798,7 +6797,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/20704433-8af4-46f1-b747-9bba156a660b")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -7012,7 +7011,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/67acfde3-6610-495e-8efd-321e2a1a37cf")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 0.36)
@@ -7226,7 +7225,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005dc1f7eb")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -7376,7 +7375,7 @@
 		(descr "http://www.palpilot.com/wp-content/uploads/2017/05/UTC027-GKN-OR-Rev-A.pdf")
 		(tags "USB C Type-C Receptacle USB2.0")
 		(property "Reference" "J2"
-			(at 6 3.74 0)
+			(at 5.5 3.74 0)
 			(layer "F.SilkS")
 			(uuid "96f957ac-bf52-40df-91dc-8b66aa882b2c")
 			(effects
@@ -8207,7 +8206,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/04d99806-2fd6-415c-93c0-90363bc2c69a")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -8535,7 +8534,7 @@
 		)
 		(path "/8800b154-5e9e-4c6a-b555-879f9a2ebf2e")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.25 1.05)
@@ -8843,7 +8842,7 @@
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/27fb22b2-2fdf-4aac-a3a4-0f1d87aa861d")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
@@ -9318,9 +9317,9 @@
 		(at 114.425 78.09)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
-		(property "Reference" "D-"
+		(property "Reference" "TP1"
 			(at 1 0 180)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "cb6955ae-633b-431c-9440-e6e3cfaecf5c")
 			(effects
 				(font
@@ -9649,9 +9648,9 @@
 		(at 89.525 79.19)
 		(descr "SMD pad as test Point, diameter 1.5mm")
 		(tags "test point SMD pad")
-		(property "Reference" "3V3"
+		(property "Reference" "TP6"
 			(at 1.2 0 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "1c2d5629-9558-4b16-b8e5-71e1eba97235")
 			(effects
 				(font
@@ -10042,7 +10041,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005dab35d0")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 0.38)
@@ -10405,9 +10404,9 @@
 		(at 106.945 49.35 90)
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
-		(property "Reference" "ENABLE"
+		(property "Reference" "ENJUMPER1"
 			(at 2.25 1.35 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "d08660c7-ac16-40ce-b5ce-4c626b31a453")
 			(effects
 				(font
@@ -10470,7 +10469,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/00000000-0000-0000-0000-00005dff606f")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.33 -1.33)
@@ -10739,7 +10738,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005db4b3e7")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -10953,7 +10952,7 @@
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/4c3f0c83-0817-4bc7-a57d-42d2b737bfa2")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
@@ -11071,7 +11070,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005da6ff9d")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -11285,7 +11284,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/baa9ca02-dbd7-4403-8b19-1c63c61c6f86")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -11499,7 +11498,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/6aa95a5f-5812-4d2b-a979-bed0b0732755")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 0.36)
@@ -12138,7 +12137,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/ef00995f-a4a9-4ee0-9241-3d601b9bfc7e")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 0.38)
@@ -12562,7 +12561,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/a29665b2-5c1d-4102-ad9a-6bbc919485f1")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 0.36)
@@ -12776,7 +12775,7 @@
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/cbc0c2e3-fdfc-4d21-98a9-611ac8976cc0")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
@@ -13307,9 +13306,9 @@
 		(at 107.725 53.99)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
-		(property "Reference" "RXD"
+		(property "Reference" "TP10"
 			(at 1 0 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "af56f803-0651-4101-825c-6eed63347308")
 			(effects
 				(font
@@ -13373,7 +13372,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(path "/b79adfd9-dbae-480d-ab5a-2a9c412479a2")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
@@ -13639,7 +13638,7 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R18"
-			(at -1 0.9 0)
+			(at 0 0.9 0)
 			(layer "F.SilkS")
 			(uuid "f277c736-3ea6-408c-8d99-bf248012ae45")
 			(effects
@@ -13648,7 +13647,6 @@
 					(thickness 0.1)
 					(bold yes)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "1k"
@@ -13704,7 +13702,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/546695df-73e1-4969-a6fd-0f651b0b6b4c")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -14220,7 +14218,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00005da70d8a")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -14369,9 +14367,9 @@
 		(at 81.405 72.59)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
-		(property "Reference" "3V3"
+		(property "Reference" "3V3LED1"
 			(at 0 -0.9 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "0c5bc598-b20d-483b-abc3-b06d2bd113fc")
 			(effects
 				(font
@@ -14434,7 +14432,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005dc1f7e5")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_circle
 			(center -1.09 0)
@@ -15086,7 +15084,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/7291e9ca-450b-4a45-82c5-cb1c37444e2f")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 0.36)
@@ -15300,7 +15298,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000061b6bc0b")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 0.38)
@@ -16675,9 +16673,9 @@
 		(at 87.775 69.49)
 		(descr "SMD pad as test Point, diameter 1.5mm")
 		(tags "test point SMD pad")
-		(property "Reference" "BBIN"
+		(property "Reference" "TP4"
 			(at 0 -1.2 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "57c03bbc-bb03-4a27-8ecf-c5d2e9fbd983")
 			(effects
 				(font
@@ -16857,7 +16855,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00005dabbfe7")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -17071,7 +17069,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/a0a89bb7-6887-4f67-b2d6-1f69767dd9dd")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -20135,9 +20133,9 @@
 		(at 86.925 77.79)
 		(descr "SMD pad as test Point, diameter 1.5mm")
 		(tags "test point SMD pad")
-		(property "Reference" "RBUS"
+		(property "Reference" "TP5"
 			(at 0 1.3 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "91967b44-9c21-4f50-a191-07e01e8e13dd")
 			(effects
 				(font
@@ -20463,9 +20461,9 @@
 		(at 107.725 56.09)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
-		(property "Reference" "TXD"
+		(property "Reference" "TP9"
 			(at 1 0 180)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "6402d302-d4f4-4af2-8b99-d793595e4730")
 			(effects
 				(font
@@ -20529,7 +20527,7 @@
 		(property ki_fp_filters "Pin* Test*")
 		(path "/0967eaf7-3e4f-4a2f-9d90-7cb2691f23b6")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
@@ -20580,9 +20578,9 @@
 		(at 114.425 75.59)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
-		(property "Reference" "D+"
+		(property "Reference" "TP2"
 			(at 1 0 180)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "74acf413-d7c3-4a2c-b1cc-5e951ee20694")
 			(effects
 				(font
@@ -20909,7 +20907,7 @@
 		(descr "Inductor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 80, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "inductor")
 		(property "Reference" "L3"
-			(at 0 1.3 0)
+			(at 0 -1.3 0)
 			(layer "F.SilkS")
 			(uuid "06c9c15c-b180-4981-8780-2c81c993df19")
 			(effects
@@ -21185,7 +21183,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/00000000-0000-0000-0000-000061b03907")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.2 -2.6)
@@ -21833,9 +21831,9 @@
 		(at 81.415 69.59)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
-		(property "Reference" "DEPLOY"
+		(property "Reference" "12VLED1"
 			(at 0 -0.9 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "655276ef-d12e-413b-a984-6b4daacb037f")
 			(effects
 				(font
@@ -21898,7 +21896,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-000061b674e8")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_circle
 			(center -1.09 0)
@@ -22125,7 +22123,7 @@
 		(property ki_fp_filters "Crystal*")
 		(path "/e0b09ad4-c581-4519-98b2-b00474a7d116")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1.35 -1.15)
@@ -22407,7 +22405,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/6b6b8837-1619-474b-aed0-02535f4202f6")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -22621,7 +22619,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/6ec371c7-9ad5-4bbe-86e8-f904c53aa69f")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -26901,7 +26899,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/fa6521f1-c4ee-4e4a-a35a-424d5bd5ed13")
 		(sheetname "Root")
-		(sheetfile "Ricardo-BlackBox.kicad_sch")
+		(sheetfile "Ricardo-JollyRoger.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -4.06 2.775)
@@ -27324,6 +27322,148 @@
 			(justify left bottom mirror)
 		)
 	)
+	(gr_text "BBOUT"
+		(at 93.425 67.49 0)
+		(layer "F.SilkS")
+		(uuid "0b90f7c0-ef86-4dbf-af47-ef4b58bdd888")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "BOOT"
+		(at 114.425 47.49 0)
+		(layer "F.SilkS")
+		(uuid "1585967d-64c6-4024-b444-f9b20a9467cf")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "TXD"
+		(at 108.725 56.09 0)
+		(layer "F.SilkS")
+		(uuid "2b626445-4044-450f-a141-b9cf02c539ed")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "RXD"
+		(at 108.725 53.99 0)
+		(layer "F.SilkS")
+		(uuid "37463fdd-e6d7-4aad-8f21-2726eb309726")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "TXD"
+		(at 112.525 55.59 0)
+		(layer "F.SilkS")
+		(uuid "5edbeb07-b987-4773-973f-abd5165d4097")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "RBUS"
+		(at 86.925 79.09 0)
+		(layer "F.SilkS")
+		(uuid "78597c8e-b9bf-4a3a-9f93-b501aa705641")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify top)
+		)
+	)
+	(gr_text "BBIN"
+		(at 87.775 68.29 0)
+		(layer "F.SilkS")
+		(uuid "97d97a2f-d35b-455c-80e6-220b5cec961f")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "D+"
+		(at 115.425 75.59 0)
+		(layer "F.SilkS")
+		(uuid "a5af595f-1f64-44df-9aef-e6f296d9c90a")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "D-"
+		(at 115.425 78.09 0)
+		(layer "F.SilkS")
+		(uuid "a972497d-ae0a-4854-9bbb-b9471da9b638")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "+3V3"
+		(at 90.725 79.19 0)
+		(layer "F.SilkS")
+		(uuid "a9d7996c-bd1f-4da6-9b23-87409b0c2141")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "+3V3"
+		(at 81.405 71.69 0)
+		(layer "F.SilkS")
+		(uuid "ab263bc5-e8df-4183-a1be-0636b29469ff")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
 	(gr_text "JOLLY ROGER\nv1.0"
 		(at 99.882998 66.599126 0)
 		(layer "F.SilkS")
@@ -27334,6 +27474,67 @@
 				(thickness 0.15)
 			)
 			(justify right bottom)
+		)
+	)
+	(gr_text "DEPLOY"
+		(at 81.415 68.69 0)
+		(layer "F.SilkS")
+		(uuid "e31d6c0f-40ab-455e-a2ab-04d597efa404")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(gr_text "ENABLE"
+		(at 108.175 47.49 0)
+		(layer "F.SilkS")
+		(uuid "e3c90733-b83d-4b65-9756-00ed09842609")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "VBUS"
+		(at 102.025 71.68 90)
+		(layer "F.SilkS")
+		(uuid "eb28aecc-1e1d-4610-8528-b807b0b2addd")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(gr_text "CTX"
+		(at 98.23 55.99 0)
+		(layer "F.SilkS")
+		(uuid "eb5ea5b8-468d-4583-9844-e62c3070b1ac")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(gr_text "CRX"
+		(at 98.23 53.74 0)
+		(layer "F.SilkS")
+		(uuid "f93cb9f2-d585-43a1-b3a0-4e8a2e9ea016")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
 		)
 	)
 	(segment
