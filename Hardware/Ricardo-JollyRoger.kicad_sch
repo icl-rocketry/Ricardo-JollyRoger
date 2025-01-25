@@ -4652,16 +4652,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 105.41) (xy 147.32 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "293b52e8-cb4e-4e08-b880-c5e18328e6ea")
-	)
-	(wire
-		(pts
 			(xy 236.22 60.96) (xy 246.38 60.96)
 		)
 		(stroke
@@ -5020,6 +5010,16 @@
 		)
 		(uuid "5fe9d7b4-6d60-4ff9-9dd3-4045aa8054fd")
 	)
+	(wire
+		(pts
+			(xy 135.89 105.41) (xy 139.7 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6250ea7d-2860-4b2e-993d-2c0498ad4946")
+	)
 	(polyline
 		(pts
 			(xy 12.7 12.7) (xy 175.26 12.7)
@@ -5272,16 +5272,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 31.75) (xy 193.04 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94cd7f3b-b693-4e6d-9177-0467b5a0afb5")
-	)
-	(wire
-		(pts
 			(xy 55.88 165.1) (xy 63.5 165.1)
 		)
 		(stroke
@@ -5289,16 +5279,6 @@
 			(type default)
 		)
 		(uuid "96315415-cfed-47d2-b3dd-d782358bd0df")
-	)
-	(wire
-		(pts
-			(xy 184.15 35.56) (xy 187.96 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "963e91b0-c0d9-430a-9e39-8fe01b0392cb")
 	)
 	(wire
 		(pts
@@ -5349,6 +5329,16 @@
 			(type default)
 		)
 		(uuid "97dcf785-3264-40a1-a36e-8842acab24fb")
+	)
+	(wire
+		(pts
+			(xy 181.61 31.75) (xy 193.04 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "981e3e67-3c79-47a7-b8ba-124de03c427f")
 	)
 	(wire
 		(pts
@@ -5542,16 +5532,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 35.56) (xy 179.07 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cbbba77b-15a9-456a-9942-b10e392b1e0a")
-	)
-	(wire
-		(pts
 			(xy 34.29 170.18) (xy 34.29 165.1)
 		)
 		(stroke
@@ -5729,6 +5709,16 @@
 			(type default)
 		)
 		(uuid "ebfa3bc5-489a-4b1a-8067-da3c91cb3045")
+	)
+	(wire
+		(pts
+			(xy 144.78 105.41) (xy 158.75 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edfe4410-e1b0-4f63-9d76-df18a5bd3ad5")
 	)
 	(wire
 		(pts
@@ -6100,7 +6090,7 @@
 		(uuid "3f00994b-99c9-4ca0-835d-a6fc3df540f3")
 	)
 	(label "NAND_CLK"
-		(at 147.32 105.41 180)
+		(at 158.75 105.41 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9270,7 +9260,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 181.61 35.56 90)
+		(at 142.24 105.41 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9278,15 +9268,15 @@
 		(dnp no)
 		(uuid "5fe8a790-b806-4451-b8c9-b6e904f776b1")
 		(property "Reference" "R20"
-			(at 181.61 40.5384 90)
+			(at 142.24 110.3884 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 181.61 38.227 90)
+		(property "Value" "33"
+			(at 142.24 108.077 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9294,7 +9284,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 181.61 35.56 0)
+			(at 142.24 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9303,7 +9293,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 181.61 35.56 0)
+			(at 142.24 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9312,7 +9302,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 181.61 35.56 0)
+			(at 142.24 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9399,72 +9389,6 @@
 			(project "RicardoTemplate"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 187.96 35.56 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "697daf9b-2ec1-4636-8208-2cc4e8c3aa60")
-		(property "Reference" "#PWR056"
-			(at 187.96 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 187.96 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 187.96 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 187.96 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 187.96 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5c5cd55f-3846-48e6-a41f-f3189cb9d5b3")
-		)
-		(instances
-			(project "Ricardo-BlackBox"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
-					(reference "#PWR056")
 					(unit 1)
 				)
 			)
