@@ -3403,7 +3403,7 @@
 			(roundrect_rratio 0.03)
 			(net 54 "unconnected-(U1-GPIO4{slash}ADC1_CH3-Pad9)")
 			(pinfunction "GPIO4/ADC1_CH3")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "96667e6f-2bc2-4076-be13-45e85ac99ea1")
 		)
 		(pad "10" smd roundrect
@@ -3413,7 +3413,7 @@
 			(roundrect_rratio 0.03)
 			(net 60 "unconnected-(U1-GPIO5{slash}ADC1_CH4-Pad10)")
 			(pinfunction "GPIO5/ADC1_CH4")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "b30a9f4b-5304-4f45-86c1-d5a27124db38")
 		)
 		(pad "11" smd roundrect
@@ -3423,7 +3423,7 @@
 			(roundrect_rratio 0.03)
 			(net 51 "unconnected-(U1-GPIO6{slash}ADC1_CH5-Pad11)")
 			(pinfunction "GPIO6/ADC1_CH5")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "8466abae-d337-4c7a-ba3c-c0619e729c86")
 		)
 		(pad "12" smd roundrect
@@ -3433,7 +3433,7 @@
 			(roundrect_rratio 0.03)
 			(net 52 "unconnected-(U1-GPIO7{slash}ADC1_CH6-Pad12)")
 			(pinfunction "GPIO7/ADC1_CH6")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "b3705bbd-0341-47b5-8321-c28ba0d1440f")
 		)
 		(pad "13" smd roundrect
@@ -3443,7 +3443,7 @@
 			(roundrect_rratio 0.03)
 			(net 62 "unconnected-(U1-GPIO8{slash}ADC1_CH7-Pad13)")
 			(pinfunction "GPIO8/ADC1_CH7")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "c4c01811-91c0-4cf9-9e9a-b6b051dd3ef8")
 		)
 		(pad "14" smd roundrect
@@ -3453,7 +3453,7 @@
 			(roundrect_rratio 0.03)
 			(net 63 "unconnected-(U1-GPIO9{slash}ADC1_CH8-Pad14)")
 			(pinfunction "GPIO9/ADC1_CH8")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "c066d33c-d529-4f38-85f6-c8b6f8694e34")
 		)
 		(pad "15" smd roundrect
@@ -3463,7 +3463,7 @@
 			(roundrect_rratio 0.1)
 			(net 79 "unconnected-(U1-GPIO10{slash}ADC1_CH9-Pad15)")
 			(pinfunction "GPIO10/ADC1_CH9")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "1c273177-fd42-4ae1-9c61-377471fb6fa5")
 		)
 		(pad "16" smd roundrect
@@ -3473,7 +3473,7 @@
 			(roundrect_rratio 0.1)
 			(net 84 "unconnected-(U1-GPIO11{slash}ADC2_CH0-Pad16)")
 			(pinfunction "GPIO11/ADC2_CH0")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "54e7dd6a-39b7-4720-816b-7f11fa4593c4")
 		)
 		(pad "17" smd roundrect
@@ -3483,7 +3483,7 @@
 			(roundrect_rratio 0.1)
 			(net 80 "unconnected-(U1-GPIO12{slash}ADC2_CH1-Pad17)")
 			(pinfunction "GPIO12/ADC2_CH1")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "347f89f1-6290-4eb7-bb87-f5381ce23da3")
 		)
 		(pad "18" smd roundrect
@@ -3493,7 +3493,7 @@
 			(roundrect_rratio 0.1)
 			(net 82 "unconnected-(U1-GPIO13{slash}ADC2_CH2-Pad18)")
 			(pinfunction "GPIO13/ADC2_CH2")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "a29fd057-3ba8-476d-b134-ce2d09e18106")
 		)
 		(pad "19" smd roundrect
@@ -3503,7 +3503,7 @@
 			(roundrect_rratio 0.1)
 			(net 81 "unconnected-(U1-GPIO14{slash}ADC2_CH3-Pad19)")
 			(pinfunction "GPIO14/ADC2_CH3")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "2d2fe27d-a099-4916-8ecd-a3207041a967")
 		)
 		(pad "20" smd roundrect
@@ -3523,7 +3523,7 @@
 			(roundrect_rratio 0.1)
 			(net 89 "unconnected-(U1-GPIO15{slash}ADC2_CH4{slash}XTAL_32K_P-Pad21)")
 			(pinfunction "GPIO15/ADC2_CH4/XTAL_32K_P")
-			(pintype "input")
+			(pintype "input+no_connect")
 			(uuid "8ca98a75-41cf-448e-b4ff-1b821ab8cd49")
 		)
 		(pad "22" smd roundrect
@@ -3533,7 +3533,7 @@
 			(roundrect_rratio 0.1)
 			(net 55 "unconnected-(U1-GPIO16{slash}ADC2_CH5{slash}XTAL_32K_N-Pad22)")
 			(pinfunction "GPIO16/ADC2_CH5/XTAL_32K_N")
-			(pintype "output")
+			(pintype "output+no_connect")
 			(uuid "dd95da6d-ed24-41f0-b0e2-fd9c689ada39")
 		)
 		(pad "23" smd roundrect
@@ -3543,7 +3543,7 @@
 			(roundrect_rratio 0.1)
 			(net 46 "unconnected-(U1-GPIO17{slash}ADC2_CH6{slash}DAC_2-Pad23)")
 			(pinfunction "GPIO17/ADC2_CH6/DAC_2")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "c5557693-d0c0-4f49-af3d-c8fe82fd9539")
 		)
 		(pad "24" smd roundrect
@@ -3553,7 +3553,7 @@
 			(roundrect_rratio 0.1)
 			(net 72 "unconnected-(U1-GPIO18{slash}ADC2_CH7{slash}DAC_1-Pad24)")
 			(pinfunction "GPIO18/ADC2_CH7/DAC_1")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "36eff278-6e69-45f5-a2ed-f3af765a8d43")
 		)
 		(pad "25" smd roundrect
@@ -3583,7 +3583,7 @@
 			(roundrect_rratio 0.1)
 			(net 70 "unconnected-(U1-GPIO21-Pad27)")
 			(pinfunction "GPIO21")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "c16780f2-8803-4331-b405-a65b5bd804c2")
 		)
 		(pad "28" smd roundrect
@@ -3673,7 +3673,7 @@
 			(roundrect_rratio 0.03)
 			(net 85 "unconnected-(U1-SPICLK_N{slash}GPIO48-Pad36)")
 			(pinfunction "SPICLK_N/GPIO48")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "60954d34-40e6-430e-9da4-07b569ac8468")
 		)
 		(pad "37" smd roundrect
@@ -3743,7 +3743,7 @@
 			(roundrect_rratio 0.1)
 			(net 75 "unconnected-(U1-GPIO38-Pad43)")
 			(pinfunction "GPIO38")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "a6ca16f8-3377-428b-b5ec-bbb4daacf9ca")
 		)
 		(pad "44" smd roundrect
@@ -3753,7 +3753,7 @@
 			(roundrect_rratio 0.1)
 			(net 83 "unconnected-(U1-MTCK{slash}JTAG{slash}GPIO39-Pad44)")
 			(pinfunction "MTCK/JTAG/GPIO39")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "bac7f4ad-0f24-4538-99e8-e6d1c38c7e0c")
 		)
 		(pad "45" smd roundrect
@@ -3763,7 +3763,7 @@
 			(roundrect_rratio 0.1)
 			(net 59 "unconnected-(U1-MTDO{slash}JTAG{slash}GPIO40-Pad45)")
 			(pinfunction "MTDO/JTAG/GPIO40")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "f88f16d6-eadb-4882-8c61-b1b9a07eb494")
 		)
 		(pad "46" smd roundrect
@@ -3783,7 +3783,7 @@
 			(roundrect_rratio 0.1)
 			(net 58 "unconnected-(U1-MTDI{slash}JTAG{slash}GPIO41-Pad47)")
 			(pinfunction "MTDI/JTAG/GPIO41")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "8a1bcec8-78a8-4695-9acd-9c6e59cc341e")
 		)
 		(pad "48" smd roundrect
@@ -3793,7 +3793,7 @@
 			(roundrect_rratio 0.1)
 			(net 49 "unconnected-(U1-MTMS{slash}JTAG{slash}GPIO42-Pad48)")
 			(pinfunction "MTMS/JTAG/GPIO42")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "1c5df8f8-c51a-4aca-93a4-fb9afd6bcc93")
 		)
 		(pad "49" smd roundrect
@@ -3823,7 +3823,7 @@
 			(roundrect_rratio 0.1)
 			(net 88 "unconnected-(U1-GPIO45-Pad51)")
 			(pinfunction "GPIO45")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "afe19532-ea66-404b-b9ed-20f88ac376ab")
 		)
 		(pad "52" smd roundrect
@@ -32828,6 +32828,45 @@
 		)
 	)
 	(zone
+		(net 3)
+		(net_name "VBUS")
+		(layer "F.Cu")
+		(uuid "25bdb127-dee5-427e-83f3-c914ed95ce70")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30000)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 87.241888 72.023468) (xy 87.641888 72.023468) (xy 87.732873 71.676104) (xy 87.525 71.589) (xy 87.3 71.59)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 87.527192 71.589918) (xy 87.723502 71.672177) (xy 87.729808 71.678535) (xy 87.730298 71.685933)
+				(xy 87.644176 72.014733) (xy 87.638765 72.021867) (xy 87.632858 72.023468) (xy 87.255261 72.023468)
+				(xy 87.246988 72.020041) (xy 87.243561 72.011768) (xy 87.243665 72.010213) (xy 87.298646 71.600099)
+				(xy 87.303141 71.592355) (xy 87.310187 71.589954) (xy 87.522622 71.58901)
+			)
+		)
+	)
+	(zone
 		(net 0)
 		(net_name "")
 		(layer "F.Cu")
@@ -33030,7 +33069,7 @@
 		(net 1)
 		(net_name "GND")
 		(layer "F.Cu")
-		(uuid "5ffc4fed-2892-4c1e-84b5-0878c6a40a2e")
+		(uuid "70da7857-41a4-48b7-9a1c-056d7c32c835")
 		(name "$teardrop_padvia$")
 		(hatch full 0.1)
 		(priority 30002)
@@ -33061,45 +33100,6 @@
 			(pts
 				(xy 88.649761 72.022986) (xy 88.566888 72.386882) (xy 88.316888 72.386882) (xy 88.234015 72.022986)
 				(xy 88.441888 71.935882)
-			)
-		)
-	)
-	(zone
-		(net 3)
-		(net_name "VBUS")
-		(layer "F.Cu")
-		(uuid "6b3f7471-930e-48ca-9388-a598d4f1d0bd")
-		(name "$teardrop_padvia$")
-		(hatch full 0.1)
-		(priority 30001)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 88.274825 76.3) (xy 88.274825 75.9) (xy 88.065987 75.742783) (xy 87.905888 75.901882) (xy 87.820784 76.109755)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 88.074081 75.748876) (xy 88.270162 75.89649) (xy 88.27471 75.904202) (xy 88.274825 75.905836)
-				(xy 88.274825 76.282412) (xy 88.271398 76.290685) (xy 88.263125 76.294112) (xy 88.258604 76.293203)
-				(xy 87.831487 76.114239) (xy 87.82518 76.107881) (xy 87.82518 76.099017) (xy 87.904992 75.90407)
-				(xy 87.907567 75.900213) (xy 88.0588 75.749924) (xy 88.067083 75.746524)
 			)
 		)
 	)
@@ -34939,45 +34939,6 @@
 		)
 	)
 	(zone
-		(net 3)
-		(net_name "VBUS")
-		(layer "F.Cu")
-		(uuid "b4e734fa-9ff8-4c77-b199-1caab1b70974")
-		(name "$teardrop_padvia$")
-		(hatch full 0.1)
-		(priority 30000)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 87.241888 72.023468) (xy 87.641888 72.023468) (xy 87.732873 71.676104) (xy 87.525 71.589) (xy 87.3 71.59)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 87.527192 71.589918) (xy 87.723502 71.672177) (xy 87.729808 71.678535) (xy 87.730298 71.685933)
-				(xy 87.644176 72.014733) (xy 87.638765 72.021867) (xy 87.632858 72.023468) (xy 87.255261 72.023468)
-				(xy 87.246988 72.020041) (xy 87.243561 72.011768) (xy 87.243665 72.010213) (xy 87.298646 71.600099)
-				(xy 87.303141 71.592355) (xy 87.310187 71.589954) (xy 87.522622 71.58901)
-			)
-		)
-	)
-	(zone
 		(net 8)
 		(net_name "/Power/LX1")
 		(layer "F.Cu")
@@ -35051,6 +35012,45 @@
 				(xy 96.301342 60.328614) (xy 96.249 60.34) (xy 94.951 60.34) (xy 94.882879 60.319998) (xy 94.836386 60.266342)
 				(xy 94.825 60.214) (xy 94.825 58.866) (xy 94.845002 58.797879) (xy 94.898658 58.751386) (xy 94.951 58.74)
 				(xy 96.249 58.74)
+			)
+		)
+	)
+	(zone
+		(net 3)
+		(net_name "VBUS")
+		(layer "F.Cu")
+		(uuid "e2e0dd09-c80d-4517-8b72-6711fa1aa133")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30001)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 88.274825 76.3) (xy 88.274825 75.9) (xy 88.065987 75.742783) (xy 87.905888 75.901882) (xy 87.820784 76.109755)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 88.074081 75.748876) (xy 88.270162 75.89649) (xy 88.27471 75.904202) (xy 88.274825 75.905836)
+				(xy 88.274825 76.282412) (xy 88.271398 76.290685) (xy 88.263125 76.294112) (xy 88.258604 76.293203)
+				(xy 87.831487 76.114239) (xy 87.82518 76.107881) (xy 87.82518 76.099017) (xy 87.904992 75.90407)
+				(xy 87.907567 75.900213) (xy 88.0588 75.749924) (xy 88.067083 75.746524)
 			)
 		)
 	)
@@ -37452,10 +37452,10 @@
 		(net 3)
 		(net_name "VBUS")
 		(layer "B.Cu")
-		(uuid "32ff41b3-c8d8-42b8-91e4-d9e0df954318")
+		(uuid "559f72a8-8d66-47fd-b0ef-a855d74aaf9a")
 		(name "$teardrop_padvia$")
 		(hatch full 0.1)
-		(priority 30001)
+		(priority 30002)
 		(attr
 			(teardrop
 				(type padvia)
@@ -37474,18 +37474,17 @@
 		)
 		(polygon
 			(pts
-				(xy 87.984619 71.413224) (xy 87.701776 71.130381) (xy 87.365901 71.430901) (xy 87.524293 71.590707)
-				(xy 87.684099 71.749099)
+				(xy 87.730112 75.442263) (xy 87.447269 75.725106) (xy 87.747789 76.060981) (xy 87.907595 75.902589)
+				(xy 88.065987 75.742783)
 			)
 		)
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 87.709602 71.138207) (xy 87.976792 71.405397) (xy 87.980219 71.41367) (xy 87.977238 71.421472)
-				(xy 87.692308 71.739923) (xy 87.684238 71.743803) (xy 87.675787 71.74084) (xy 87.675365 71.740442)
-				(xy 87.603318 71.669033) (xy 87.52433 71.590743) (xy 87.524256 71.590669) (xy 87.446995 71.512719)
-				(xy 87.374567 71.439644) (xy 87.371178 71.431358) (xy 87.374642 71.4231) (xy 87.375059 71.422706)
-				(xy 87.693528 71.13776) (xy 87.701978 71.134798)
+				(xy 87.73836 75.449643) (xy 88.056811 75.734573) (xy 88.060691 75.742643) (xy 88.057728 75.751094)
+				(xy 88.057319 75.751528) (xy 87.907631 75.902551) (xy 87.907557 75.902625) (xy 87.756534 76.052313)
+				(xy 87.748246 76.055703) (xy 87.739988 76.052239) (xy 87.739579 76.051805) (xy 87.454649 75.733354)
+				(xy 87.451686 75.724903) (xy 87.455094 75.71728) (xy 87.722286 75.450088) (xy 87.730558 75.446662)
 			)
 		)
 	)
@@ -37569,7 +37568,7 @@
 		(net 3)
 		(net_name "VBUS")
 		(layer "B.Cu")
-		(uuid "8a441d3f-914d-4fdc-bd41-af21a0d09117")
+		(uuid "793b6051-c3fd-4cb5-b0e4-7f85ebe1bfc1")
 		(name "$teardrop_padvia$")
 		(hatch full 0.1)
 		(priority 30000)
@@ -37601,46 +37600,6 @@
 				(xy 87.725614 72.028949) (xy 87.721734 72.037019) (xy 87.713932 72.04) (xy 87.336068 72.04) (xy 87.327795 72.036573)
 				(xy 87.324386 72.028949) (xy 87.300683 71.602294) (xy 87.303646 71.593843) (xy 87.311716 71.589963)
 				(xy 87.312302 71.589945) (xy 87.525 71.589)
-			)
-		)
-	)
-	(zone
-		(net 3)
-		(net_name "VBUS")
-		(layer "B.Cu")
-		(uuid "a9db8e89-4e61-4fd9-ae53-e62ea2edf9b7")
-		(name "$teardrop_padvia$")
-		(hatch full 0.1)
-		(priority 30002)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 87.730112 75.442263) (xy 87.447269 75.725106) (xy 87.747789 76.060981) (xy 87.907595 75.902589)
-				(xy 88.065987 75.742783)
-			)
-		)
-		(filled_polygon
-			(layer "B.Cu")
-			(pts
-				(xy 87.73836 75.449643) (xy 88.056811 75.734573) (xy 88.060691 75.742643) (xy 88.057728 75.751094)
-				(xy 88.057319 75.751528) (xy 87.907631 75.902551) (xy 87.907557 75.902625) (xy 87.756534 76.052313)
-				(xy 87.748246 76.055703) (xy 87.739988 76.052239) (xy 87.739579 76.051805) (xy 87.454649 75.733354)
-				(xy 87.451686 75.724903) (xy 87.455094 75.71728) (xy 87.722286 75.450088) (xy 87.730558 75.446662)
 			)
 		)
 	)
@@ -38340,6 +38299,47 @@
 				(xy 81.180512 45.610737) (xy 81.192333 45.605474) (xy 81.477831 45.495882) (xy 81.490153 45.491878)
 				(xy 81.785543 45.412728) (xy 81.798222 45.410034) (xy 82.100238 45.362201) (xy 82.113143 45.360844)
 				(xy 82.421756 45.344669) (xy 82.428246 45.3445) (xy 82.469875 45.3445) (xy 121.580125 45.3445) (xy 121.621754 45.3445)
+			)
+		)
+	)
+	(zone
+		(net 3)
+		(net_name "VBUS")
+		(layer "B.Cu")
+		(uuid "b8685017-7859-4a04-9451-52b8834215d3")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30001)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 87.984619 71.413224) (xy 87.701776 71.130381) (xy 87.365901 71.430901) (xy 87.524293 71.590707)
+				(xy 87.684099 71.749099)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 87.709602 71.138207) (xy 87.976792 71.405397) (xy 87.980219 71.41367) (xy 87.977238 71.421472)
+				(xy 87.692308 71.739923) (xy 87.684238 71.743803) (xy 87.675787 71.74084) (xy 87.675365 71.740442)
+				(xy 87.603318 71.669033) (xy 87.52433 71.590743) (xy 87.524256 71.590669) (xy 87.446995 71.512719)
+				(xy 87.374567 71.439644) (xy 87.371178 71.431358) (xy 87.374642 71.4231) (xy 87.375059 71.422706)
+				(xy 87.693528 71.13776) (xy 87.701978 71.134798)
 			)
 		)
 	)
