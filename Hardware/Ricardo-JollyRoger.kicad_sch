@@ -7283,7 +7283,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 25.4 21.59 90)
 			(effects
 				(font
@@ -7547,7 +7547,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 54.61 21.59 90)
 			(effects
 				(font
@@ -7964,7 +7964,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 63.5 26.67 90)
 			(effects
 				(font
@@ -8167,7 +8167,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 25.4 30.48 90)
 			(effects
 				(font
@@ -9160,7 +9160,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 25.4 40.64 90)
 			(effects
 				(font
@@ -10099,7 +10099,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOTFL50P160X60-8N"
+		(property "Footprint" "iclr:SOTFL50P160X60-8N"
 			(at 232.41 53.34 0)
 			(effects
 				(font
@@ -11592,7 +11592,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
+		(property "Footprint" "iclr:Crystal_SMD_2016-4Pin_2.0x1.6mm"
 			(at 156.21 132.08 0)
 			(effects
 				(font
@@ -12047,7 +12047,7 @@
 			(uuid "ba1155fd-d7b9-48e5-99ea-77360ad93f36")
 		)
 		(instances
-			(project "Ricardo-BlackBox"
+			(project "Ricardo-JollyRoger"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
 					(page "3")
 				)
@@ -12125,7 +12125,7 @@
 			(uuid "8eb98c56-17e4-4de6-a3e3-06dcfa392040")
 		)
 		(instances
-			(project "Ricardo-BlackBox"
+			(project "Ricardo-JollyRoger"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
 					(page "2")
 				)
@@ -12163,7 +12163,7 @@
 			)
 		)
 		(instances
-			(project "Ricardo-BlackBox"
+			(project "Ricardo-JollyRoger"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
 					(page "4")
 				)

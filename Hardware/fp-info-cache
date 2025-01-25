@@ -1,4 +1,4 @@
-24090608074273788
+24099288610100378
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -96894,6 +96894,13 @@ DDTCCRUB_COTS_Charger
 4
 4
 iclr
+DEA-4_2P0X1P25
+
+DEA202450BT-1213C1 
+0
+4
+4
+iclr
 DIOM6959X245N
 
 
@@ -97307,6 +97314,27 @@ MOSFET (P-Channel)
 11
 11
 iclr
+SKY66112-11_SKY
+
+SKY66112-11 
+0
+24
+24
+iclr
+SKY66112-11_SKY-L
+
+SKY66112-11 
+0
+24
+24
+iclr
+SKY66112-11_SKY-M
+
+SKY66112-11 
+0
+24
+24
+iclr
 SODFL3516X70N
 S Series_1
 Diode
@@ -97488,6 +97516,13 @@ TRANS_SSM6J511NU,LF
 0
 8
 8
+iclr
+Terraria
+
+
+0
+0
+0
 iclr
 Texas_PowerVFQFN_15
 
