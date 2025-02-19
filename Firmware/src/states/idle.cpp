@@ -14,8 +14,12 @@
 #include "config/systemflags_config.h"
 #include "config/types.h"
 
-Idle::Idle(Types::CoreTypes::SystemStatus_t &systemstatus, Types::CoreTypes::CommandHandler_t &commandhandler) : State(SYSTEM_FLAG::STATE_IDLE, systemstatus),
-                                                                                                                 _commandhandler(commandhandler) {};
+Idle::Idle(System &system,
+           Types::CoreTypes::SystemStatus_t &systemstatus,
+           Types::CoreTypes::CommandHandler_t &commandhandler)
+    : State(SYSTEM_FLAG::STATE_IDLE, systemstatus),
+      system(system),
+      _commandhandler(commandhandler) {};
 
 void Idle::initialize()
 {

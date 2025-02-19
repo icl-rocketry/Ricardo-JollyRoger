@@ -37,7 +37,7 @@ void System::systemSetup()
     delay(1000);
 
     // Initialise state machine (idle)
-    statemachine.initalize(std::make_unique<Idle>(systemstatus, commandhandler));
+    statemachine.initalize(std::make_unique<Idle>(*this, systemstatus, commandhandler));
 
     // Configure CAN bus interface
     canbus.setup();
