@@ -7,6 +7,7 @@
 // Third-party imports
 #include <libriccore/riccoresystem.h>
 #include <HardwareSerial.h>
+#include <Preferences.h>
 
 // Internal imports
 #include "config/systemflags_config.h"
@@ -101,4 +102,45 @@ void System::initializeLoggers()
     // Initialise log files
     loggerhandler.retrieve_logger<RicCoreLoggingConfig::LOGGERS::SYS>().initialize(std::move(syslogfile), networkmanager);
     loggerhandler.retrieve_logger<RicCoreLoggingConfig::LOGGERS::PACKET>().initialize(std::move(packetlogfile), networkmanager);
+}
+
+uint16_t System::getBootCount()
+{
+    // Declare boot count variable
+    // NOTE: declared as a static variable here, instead of as a system class variable,
+    //       due to instantiation order issues with Arduino Preferences
+    static uint16_t bootCount;
+
+    // Declare static initialised flag
+    static bool initialised = false;
+
+    // Return system boot count if already initialised
+    if (initialised)
+    {
+        return bootCount;
+    }
+
+    // Declare NVS access
+    Preferences preferences;
+
+    // Open NVS access
+    preferences.begin("JollyRoger", false);
+
+    // Get boot count (default to zero)
+    bootCount = preferences.getUShort("bootCount");
+
+    // Increment boot count
+    bootCount++;
+
+    // Update stored boot count
+    preferences.putUShort("bootCount", bootCount);
+
+    // Close NVS access
+    preferences.end();
+
+    // Set initialised
+    initialised = true;
+
+    // Return boot count
+    return bootCount;
 }

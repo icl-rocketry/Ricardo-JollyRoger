@@ -51,6 +51,13 @@ public:
     /// @brief System time service
     RicardoTimeService timeService;
 
+    /**
+     * @brief Get boot count
+     *
+     * @author Max Hallgarten La Casta
+     */
+    uint16_t getBootCount();
+
 private:
     /**
      * @brief Set up SD card
