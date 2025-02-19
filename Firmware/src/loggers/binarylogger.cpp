@@ -9,7 +9,7 @@
 #include <time/ricardotimeservice.h>
 #include <utilities/vector.h>
 
-bool BinaryLogger::initialize(std::unique_ptr<WrappedFile> file)
+bool BinaryLogger::initialize(std::unique_ptr<WrappedFile> file, const uint16_t &bootCount)
 {
     // Check that file pointer exists
     if (file == nullptr)
@@ -21,6 +21,9 @@ bool BinaryLogger::initialize(std::unique_ptr<WrappedFile> file)
     // Store file pointer
     _file = std::move(file);
     initialized = true;
+
+    // Set boot count
+    _bootCount = bootCount;
 
     // Return success
     return true;
@@ -35,7 +38,7 @@ void BinaryLogger::log(const std::vector<uint8_t> &payload)
     }
 
     // Generate binary log packet
-    BinaryLogHeader logHeader(log_index++, millis(), RicardoTimeService::getEpochMillis());
+    BinaryLogHeader logHeader(_bootCount, log_index++, millis());
 
     // Generate packet
     std::vector<uint8_t> packet;

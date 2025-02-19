@@ -23,10 +23,11 @@ public:
      * @author Max Hallgarten La Casta
      *
      * @param[in] file File pointer
+     * @param[in] bootCount Boot count
      * @return true Successfully initialised
      * @return false Unsuccessfully initialised
      */
-    bool initialize(std::unique_ptr<WrappedFile> file);
+    bool initialize(std::unique_ptr<WrappedFile> file, const uint16_t &bootCount);
 
     /**
      * @brief Log a payload
@@ -43,6 +44,9 @@ private:
 
     /// @brief Log packet marker
     const std::vector<uint8_t> END_BUFFER = {0x0};
+
+    /// @brief Boot count
+    uint16_t _bootCount;
 
     /// @brief Index of payloads logged
     uint32_t log_index = 0;

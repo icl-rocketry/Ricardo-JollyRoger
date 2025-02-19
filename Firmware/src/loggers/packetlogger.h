@@ -29,10 +29,11 @@ public:
      *
      * @param[in] file File pointer
      * @param[in] networkmanager Network manager
+     * @param[in] bootCount Boot count
      * @return true Successfully initialised
      * @return false Unsuccessfully initialised
      */
-    bool initialize(std::unique_ptr<WrappedFile> file, RnpNetworkManager &networkmanager);
+    bool initialize(std::unique_ptr<WrappedFile> file, RnpNetworkManager &networkmanager, const uint16_t &bootCount);
 
 private:
     /**

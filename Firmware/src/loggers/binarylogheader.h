@@ -11,9 +11,9 @@ class BinaryLogHeader
 {
 private:
     // Metadata
+    const uint16_t bootCount;
     const uint32_t index;
     const uint32_t millis;
-    const int64_t epochMillis;
 
     /**
      * @brief Get the header serialiser
@@ -26,9 +26,9 @@ private:
     {
         // Return serialiser
         return RnpSerializer(
+            &BinaryLogHeader::bootCount,
             &BinaryLogHeader::index,
-            &BinaryLogHeader::millis,
-            &BinaryLogHeader::epochMillis);
+            &BinaryLogHeader::millis);
     };
 
 public:
@@ -37,11 +37,16 @@ public:
      *
      * @author Max Hallgarten La Casta
      *
+     * @param[in] bootCount Boot count
      * @param[in] index Packet index
      * @param[in] millis System time since boot
-     * @param[in] epochMillis System time since epoch
      */
-    BinaryLogHeader(const uint32_t &index, const uint32_t &millis, const int64_t &epochMillis) : index(index), millis(millis), epochMillis(epochMillis) {}
+    BinaryLogHeader(const uint16_t &bootCount,
+                    const uint32_t &index,
+                    const uint32_t &millis)
+        : bootCount(bootCount),
+          index(index),
+          millis(millis) {}
 
     /**
      * @brief Return the serialised header

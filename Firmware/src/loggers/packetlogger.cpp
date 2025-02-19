@@ -3,10 +3,12 @@
 // Third-party imports
 #include <libriccore/networkinterfaces/serial/cobs.h>
 
-bool PacketLogger::initialize(std::unique_ptr<WrappedFile> file, RnpNetworkManager &networkmanager)
+bool PacketLogger::initialize(std::unique_ptr<WrappedFile> file,
+                              RnpNetworkManager &networkmanager,
+                              const uint16_t &bootCount)
 {
     // Initialise underlying binary logger
-    bool success = BinaryLogger::initialize(std::move(file));
+    bool success = BinaryLogger::initialize(std::move(file), bootCount);
 
     // Return if the underlying binary logger fails to initialise
     if (!success)

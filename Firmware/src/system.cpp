@@ -101,7 +101,7 @@ void System::initializeLoggers()
 
     // Initialise log files
     loggerhandler.retrieve_logger<RicCoreLoggingConfig::LOGGERS::SYS>().initialize(std::move(syslogfile), networkmanager);
-    loggerhandler.retrieve_logger<RicCoreLoggingConfig::LOGGERS::PACKET>().initialize(std::move(packetlogfile), networkmanager);
+    loggerhandler.retrieve_logger<RicCoreLoggingConfig::LOGGERS::PACKET>().initialize(std::move(packetlogfile), networkmanager, getBootCount());
 }
 
 uint16_t System::getBootCount()
