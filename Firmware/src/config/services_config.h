@@ -11,7 +11,8 @@ namespace Services
      */
     enum class ID : uint8_t
     {
-        ProberService = 10
+        ProberService = 10,
+        TimeService = 123
     };
 
 };

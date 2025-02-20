@@ -18,6 +18,7 @@
 #include "commands/commands.h"
 #include "states/idle.h"
 
+// SPI bus configuration
 static constexpr int VSPI_BUS_NUM = 0;
 static constexpr int HSPI_BUS_NUM = 1;
 
@@ -25,7 +26,7 @@ System::System() : RicCoreSystem(Commands::command_map, Commands::defaultEnabled
                    canbus(systemstatus, PinMap::CAN_TX, PinMap::CAN_RX, 3),
                    SDSPI(VSPI_BUS_NUM),
                    primarysd(SDSPI, PinMap::SD_CS, SD_SCK_MHZ(20), true, &systemstatus),
-                   timeService(networkmanager),
+                   timeService(networkmanager, Services::ID::TimeService),
                    prober(networkmanager, Services::ID::ProberService) {}
 
 void System::systemSetup()

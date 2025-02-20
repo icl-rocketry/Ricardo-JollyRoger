@@ -6,10 +6,12 @@
 // Third-party imports
 #include <libriccore/platform/millis.h>
 
-RicardoTimeService::RicardoTimeService(RnpNetworkManager &networkmanager, const uint8_t &service) : networkmanager(networkmanager)
+RicardoTimeService::RicardoTimeService(RnpNetworkManager &networkmanager,
+                                       const Services::ID &service)
+    : networkmanager(networkmanager)
 {
     // Register service with network manager
-    networkmanager.registerService(service, &RicardoTimeService::simpleTimeUpdate);
+    networkmanager.registerService(static_cast<uint8_t>(service), &RicardoTimeService::simpleTimeUpdate);
 };
 
 uint32_t RicardoTimeService::getMillis()

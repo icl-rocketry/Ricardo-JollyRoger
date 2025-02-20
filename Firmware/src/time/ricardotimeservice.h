@@ -4,6 +4,9 @@
 #include <cstdint>
 #include <sys/time.h>
 
+// Internal imports
+#include <config/services_config.h>
+
 // Third-party imports
 #include <librnp/rnp_networkmanager.h>
 #include <librnp/default_packets/simplecommandpacket.h>
@@ -18,9 +21,9 @@ public:
      * @author Max Hallgarten La Casta
      *
      * @param[in] networkmanager Network manager
-     * @param[in] service Registered port
+     * @param[in] service Registered service
      */
-    RicardoTimeService(RnpNetworkManager &networkmanager, const uint8_t &service = 123);
+    RicardoTimeService(RnpNetworkManager &networkmanager, const Services::ID &service);
 
     /**
      * @brief Get the current time (since boot)
