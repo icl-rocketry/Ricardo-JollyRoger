@@ -9,6 +9,7 @@
 #include "config/commands_config.h"
 #include "config/pinmap_config.h"
 #include "commands/commands.h"
+#include "prober/prober.h"
 #include "storage/sdfat_store.h"
 #include "time/ricardotimeservice.h"
 
@@ -50,6 +51,9 @@ public:
 
     /// @brief System time service
     RicardoTimeService timeService;
+
+    /// @brief Prober
+    Prober prober;
 
     /**
      * @brief Get boot count
