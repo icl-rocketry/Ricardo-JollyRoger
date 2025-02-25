@@ -3,3 +3,9 @@
 
 # VSCode
 .vscode
+
+# Espressif
+managed_components
+
+# Apple
+**/.DS_Store
