@@ -468,7 +468,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "ZDSD04GLGEAG"
 			(at 0 3.95 90)
 			(layer "F.Fab")
 			(uuid "932d9b15-4fcb-4afb-afd1-ad04426261db")
@@ -492,7 +492,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410010101_Zetta-ZDSD04GLGEAG_C2875854.pdf"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
