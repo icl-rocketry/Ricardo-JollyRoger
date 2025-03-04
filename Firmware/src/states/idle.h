@@ -55,5 +55,4 @@ public:
 private:
     System &system;
     Types::CoreTypes::CommandHandler_t &_commandhandler;
-    uint32_t prevLogMessageTime;
 };
